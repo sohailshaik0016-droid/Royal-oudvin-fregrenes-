@@ -1,0 +1,15 @@
+name = "oudvinfragrances"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-01-01"
+
+# Free Cloudflare D1 SQLite Database Binding:
+# Attach your free D1 database in the Cloudflare Dashboard:
+#   Workers & Pages -> oudvinfragrances -> Settings -> Bindings -> Add -> D1 database
+#   Variable name: DB
+#   D1 database:   oudvin-db
+#
+# (If deploying via Wrangler CLI instead of the Cloudflare Dashboard, uncomment and fill your database_id:)
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "oudvin-db"
+# database_id = "<your-d1-database-id>"

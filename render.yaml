@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: oudvinfragrances
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install && npm run build
+    startCommand: npx tsx server.ts
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: UPI_ID
+        value: sohailshaik0016@okhdfcbank
+      - key: WHATSAPP_NUMBER
+        value: "918074469549"

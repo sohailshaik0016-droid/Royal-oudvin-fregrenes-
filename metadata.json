@@ -1,0 +1,6 @@
+{
+  "name": "OUDVIN FRAGRANCES",
+  "description": "Experience The Art Of Luxury. Premium Arabian luxury perfume house offering Signature, Classic, and Premium collections with bespoke fragrance creation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

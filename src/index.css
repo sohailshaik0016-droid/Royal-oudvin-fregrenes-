@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #101010;
+  --color-obsidian-soft: #171717;
+  --color-obsidian-elevated: #1E1C1A;
+  --color-royal-gold: #C9A24A;
+  --color-royal-gold-light: #DFC076;
+  --color-royal-gold-dark: #A58030;
+  --color-ivory-cream: #F3EBDD;
+  --color-ivory-warm: #EAE0CE;
+  --color-oud-brown: #493323;
+  --color-oud-brown-dark: #2F2015;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #101010;
+    color: #F3EBDD;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid #C9A24A;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #101010;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A3228;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A24A;
+}
